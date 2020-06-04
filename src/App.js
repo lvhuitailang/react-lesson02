@@ -4,7 +4,8 @@ import {
     TodoHeader,
     TodoInput,
     TodoList,
-    Like
+    Like,
+    CounterBase
 } from './componets'
 /*
 
@@ -77,6 +78,7 @@ class App extends Component {
     render() {
         return (
             <div>
+                <CounterBase></CounterBase>
                 <TodoHeader title={this.state.todoHeaderText}>
                     <i>{this.state.todoHeaderDesc}</i>
                 </TodoHeader>
